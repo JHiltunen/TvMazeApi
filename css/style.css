@@ -1,0 +1,86 @@
+body {
+    background: #0F2027;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#page-container {
+    width: 90%;
+    margin: 50px auto;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-flow: wrap;
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 5px;
+    width: 100%;
+    height: fit-content;
+    font-family: roboto;
+    border-radius: 18px;
+    background: white;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+    text-align: center;
+
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.card-image {
+    margin-left: auto;
+    margin-right: auto;
+}
+.card-image img {
+    border-radius: 15px;
+    margin-top: 15px;
+    width: 100%;
+}
+
+.card-text {
+    margin: 25px;
+}
+
+.card-text .date {
+    color: rgb(255, 7, 110);
+    font-size: 13px;
+}
+
+.card-text p {
+    color: grey;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.card-text h2 {
+    margin-top: 0;
+    font-size: 28px;
+}
+
+.card:hover {
+    transform: scale(1.2);
+    box-shadow: 5px 5px 15px rgb(0,0,0,0.6);
+}
+
+@media only screen and (min-width: 700px) {
+	.card {
+        width: 45%;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .card {
+        width: 30%;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .card {
+        width: 20%;
+    }
+}
